@@ -1,0 +1,15 @@
+K. He, et. al Momentum Contrast for Unsupervised Visual Representation Learning
+
+X. Chen, et. al Improved Baselines with Momentum Contrastive Learning
+
+facebookresearch MoCo Code
+
+HobbitLong CMC
+
+T. Chen, et. al SimCLR Paper
+
+noahgolmant pytorch-lars
+
+fabio-deep Distributed-Pytorch-Boilerplate
+
+AidenDurrant Unofficial Pytorch Implementation of MocCoV2

@@ -1,0 +1,21 @@
+  --n_epochs:        20
+  --finetune_epochs: 50
+  --warmup_epochs:   1
+  --batch_size:      128
+  --learning_rate:   0.015
+  --base_lr:         0.0001
+  --finetune_learning_rate:10.0
+  --weight_decay:    1e-6
+  --finetune_weight_decay:0.0
+  --patience:        100
+  --optimiser:       sgd
+  --queue_size:      65536
+  --queue_momentum:  0.99
+  --temperature:     0.07
+  --jitter_d:        0.5
+  --jitter_p:        0.8
+  --blur_sigma:      [0.1, 2.0]
+  --blur_p:          0.5
+  --grey_p:          0.2
+Defaults:
+  --model:           resnet18

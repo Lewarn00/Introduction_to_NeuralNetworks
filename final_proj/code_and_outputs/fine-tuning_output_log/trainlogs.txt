@@ -1,0 +1,989 @@
+----------------------------------------------------------------------
+          Layer.Parameter                       Shape          Param#
+----------------------------------------------------------------------
+             module.queue                [65536, 128]       8,388,608
+         module.queue_ptr                          []               1
+             conv1.weight               [64, 3, 3, 3]           1,728
+             conv1.weight              [64, 64, 3, 3]          36,864
+             conv2.weight              [64, 64, 3, 3]          36,864
+             conv1.weight              [64, 64, 3, 3]          36,864
+             conv2.weight              [64, 64, 3, 3]          36,864
+             conv1.weight             [128, 64, 3, 3]          73,728
+             conv2.weight            [128, 128, 3, 3]         147,456
+                 0.weight                   [128, 64]           8,192
+                 1.weight                       [128]             128
+                   1.bias                       [128]             128
+           1.running_mean                       [128]             128
+            1.running_var                       [128]             128
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [128, 128, 3, 3]         147,456
+             conv2.weight            [128, 128, 3, 3]         147,456
+             conv1.weight            [256, 128, 3, 3]         294,912
+             conv2.weight            [256, 256, 3, 3]         589,824
+                 0.weight                  [256, 128]          32,768
+                 1.weight                       [256]             256
+                   1.bias                       [256]             256
+           1.running_mean                       [256]             256
+            1.running_var                       [256]             256
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [256, 256, 3, 3]         589,824
+             conv2.weight            [256, 256, 3, 3]         589,824
+             conv1.weight            [512, 256, 3, 3]       1,179,648
+             conv2.weight            [512, 512, 3, 3]       2,359,296
+                 0.weight                  [512, 256]         131,072
+                 1.weight                       [512]             512
+                   1.bias                       [512]             512
+           1.running_mean                       [512]             512
+            1.running_var                       [512]             512
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [512, 512, 3, 3]       2,359,296
+             conv2.weight            [512, 512, 3, 3]       2,359,296
+                W1.weight                  [512, 512]         262,144
+                  W1.bias                       [512]             512
+                W2.weight                  [128, 512]          65,536
+                  W2.bias                       [128]             128
+             conv1.weight               [64, 3, 3, 3]           1,728
+             conv1.weight              [64, 64, 3, 3]          36,864
+             conv2.weight              [64, 64, 3, 3]          36,864
+             conv1.weight              [64, 64, 3, 3]          36,864
+             conv2.weight              [64, 64, 3, 3]          36,864
+             conv1.weight             [128, 64, 3, 3]          73,728
+             conv2.weight            [128, 128, 3, 3]         147,456
+                 0.weight                   [128, 64]           8,192
+                 1.weight                       [128]             128
+                   1.bias                       [128]             128
+           1.running_mean                       [128]             128
+            1.running_var                       [128]             128
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [128, 128, 3, 3]         147,456
+             conv2.weight            [128, 128, 3, 3]         147,456
+             conv1.weight            [256, 128, 3, 3]         294,912
+             conv2.weight            [256, 256, 3, 3]         589,824
+                 0.weight                  [256, 128]          32,768
+                 1.weight                       [256]             256
+                   1.bias                       [256]             256
+           1.running_mean                       [256]             256
+            1.running_var                       [256]             256
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [256, 256, 3, 3]         589,824
+             conv2.weight            [256, 256, 3, 3]         589,824
+             conv1.weight            [512, 256, 3, 3]       1,179,648
+             conv2.weight            [512, 512, 3, 3]       2,359,296
+                 0.weight                  [512, 256]         131,072
+                 1.weight                       [512]             512
+                   1.bias                       [512]             512
+           1.running_mean                       [512]             512
+            1.running_var                       [512]             512
+    1.num_batches_tracked                          []             1.0
+             conv1.weight            [512, 512, 3, 3]       2,359,296
+             conv2.weight            [512, 512, 3, 3]       2,359,296
+                W1.weight                  [512, 512]         262,144
+                  W1.bias                       [512]             512
+                W2.weight                  [128, 512]          65,536
+                  W2.bias                       [128]             128
+----------------------------------------------------------------------
+
+pretrain/train: 45000 - valid: 5000 - test: 10000
+
+Epoch 1/100:
+
+
+[Finetune] loss: 3528.2723,	 acc: 0.1201, 	 acc_top5: 0.5260
+
+
+[valid] loss: 1910.7028,	 acc: 0.1885,	 acc_top5: 0.5621 
+
+
+Epoch 2/100:
+
+
+[Finetune] loss: 2449.5643,	 acc: 0.1485, 	 acc_top5: 0.5574
+
+
+[valid] loss: 1538.6233,	 acc: 0.2372,	 acc_top5: 0.5645 
+
+
+Epoch 3/100:
+
+
+[Finetune] loss: 1992.8829,	 acc: 0.1610, 	 acc_top5: 0.5925
+
+
+[valid] loss: 1508.4628,	 acc: 0.1569,	 acc_top5: 0.6508 
+
+
+Epoch 4/100:
+
+
+[Finetune] loss: 1937.1413,	 acc: 0.1713, 	 acc_top5: 0.6042
+
+
+[valid] loss: 2587.8135,	 acc: 0.1961,	 acc_top5: 0.5495 
+
+
+Epoch 5/100:
+
+
+[Finetune] loss: 1630.1455,	 acc: 0.1845, 	 acc_top5: 0.6243
+
+
+[valid] loss: 1724.1672,	 acc: 0.2224,	 acc_top5: 0.5831 
+
+
+Epoch 6/100:
+
+
+[Finetune] loss: 1710.4846,	 acc: 0.1817, 	 acc_top5: 0.6163
+
+
+[valid] loss: 2806.5469,	 acc: 0.2067,	 acc_top5: 0.5092 
+
+
+Epoch 7/100:
+
+
+[Finetune] loss: 1597.4969,	 acc: 0.1816, 	 acc_top5: 0.6198
+
+
+[valid] loss: 2415.1090,	 acc: 0.1635,	 acc_top5: 0.5771 
+
+
+Epoch 8/100:
+
+
+[Finetune] loss: 1626.0159,	 acc: 0.1836, 	 acc_top5: 0.6166
+
+
+[valid] loss: 1088.3060,	 acc: 0.2326,	 acc_top5: 0.7198 
+
+
+Epoch 9/100:
+
+
+[Finetune] loss: 1480.2423,	 acc: 0.1893, 	 acc_top5: 0.6301
+
+
+[valid] loss: 1624.6871,	 acc: 0.1595,	 acc_top5: 0.7013 
+
+
+Epoch 10/100:
+
+
+[Finetune] loss: 1405.0857,	 acc: 0.1925, 	 acc_top5: 0.6381
+
+
+[valid] loss: 1256.4043,	 acc: 0.2260,	 acc_top5: 0.6873 
+
+
+Epoch 11/100:
+
+
+[Finetune] loss: 1475.2983,	 acc: 0.1909, 	 acc_top5: 0.6357
+
+
+[valid] loss: 1141.6782,	 acc: 0.2312,	 acc_top5: 0.6899 
+
+
+Epoch 12/100:
+
+
+[Finetune] loss: 1435.3793,	 acc: 0.1952, 	 acc_top5: 0.6471
+
+
+[valid] loss: 1375.8741,	 acc: 0.2374,	 acc_top5: 0.6352 
+
+
+Epoch 13/100:
+
+
+[Finetune] loss: 1290.4616,	 acc: 0.2073, 	 acc_top5: 0.6592
+
+
+[valid] loss: 1584.7394,	 acc: 0.1715,	 acc_top5: 0.7444 
+
+
+Epoch 14/100:
+
+
+[Finetune] loss: 1443.8639,	 acc: 0.1950, 	 acc_top5: 0.6368
+
+
+[valid] loss: 1780.4275,	 acc: 0.2065,	 acc_top5: 0.6579 
+
+
+Epoch 15/100:
+
+
+[Finetune] loss: 1399.3237,	 acc: 0.1957, 	 acc_top5: 0.6463
+
+
+[valid] loss: 1836.6734,	 acc: 0.1789,	 acc_top5: 0.6573 
+
+
+Epoch 16/100:
+
+
+[Finetune] loss: 1149.7690,	 acc: 0.2110, 	 acc_top5: 0.6704
+
+
+[valid] loss: 1698.2663,	 acc: 0.2095,	 acc_top5: 0.6446 
+
+
+Epoch 17/100:
+
+
+[Finetune] loss: 1395.0874,	 acc: 0.1980, 	 acc_top5: 0.6544
+
+
+[valid] loss: 1165.7975,	 acc: 0.2111,	 acc_top5: 0.7348 
+
+
+Epoch 18/100:
+
+
+[Finetune] loss: 1257.5608,	 acc: 0.2013, 	 acc_top5: 0.6546
+
+
+[valid] loss: 1661.0391,	 acc: 0.1969,	 acc_top5: 0.6827 
+
+
+Epoch 19/100:
+
+
+[Finetune] loss: 1232.5607,	 acc: 0.2089, 	 acc_top5: 0.6620
+
+
+[valid] loss: 1407.6013,	 acc: 0.2049,	 acc_top5: 0.7192 
+
+
+Epoch 20/100:
+
+
+[Finetune] loss: 1337.3065,	 acc: 0.1998, 	 acc_top5: 0.6503
+
+
+[valid] loss: 1198.0602,	 acc: 0.2562,	 acc_top5: 0.7318 
+
+
+Epoch 21/100:
+
+
+[Finetune] loss: 1114.8308,	 acc: 0.2163, 	 acc_top5: 0.6724
+
+
+[valid] loss: 870.7974,	 acc: 0.3125,	 acc_top5: 0.7528 
+
+
+Epoch 22/100:
+
+
+[Finetune] loss: 1143.2187,	 acc: 0.2135, 	 acc_top5: 0.6720
+
+
+[valid] loss: 987.8783,	 acc: 0.2522,	 acc_top5: 0.7139 
+
+
+Epoch 23/100:
+
+
+[Finetune] loss: 1108.4701,	 acc: 0.2114, 	 acc_top5: 0.6664
+
+
+[valid] loss: 2636.6142,	 acc: 0.1865,	 acc_top5: 0.5895 
+
+
+Epoch 24/100:
+
+
+[Finetune] loss: 1157.6974,	 acc: 0.2108, 	 acc_top5: 0.6544
+
+
+[valid] loss: 1412.5252,	 acc: 0.2238,	 acc_top5: 0.7206 
+
+
+Epoch 25/100:
+
+
+[Finetune] loss: 1082.4776,	 acc: 0.2128, 	 acc_top5: 0.6704
+
+
+[valid] loss: 1148.8269,	 acc: 0.1903,	 acc_top5: 0.7608 
+
+
+Epoch 26/100:
+
+
+[Finetune] loss: 1219.7235,	 acc: 0.2026, 	 acc_top5: 0.6498
+
+
+[valid] loss: 1211.8185,	 acc: 0.2494,	 acc_top5: 0.6865 
+
+
+Epoch 27/100:
+
+
+[Finetune] loss: 1174.6244,	 acc: 0.2028, 	 acc_top5: 0.6575
+
+
+[valid] loss: 1231.4436,	 acc: 0.2402,	 acc_top5: 0.6444 
+
+
+Epoch 28/100:
+
+
+[Finetune] loss: 1027.2954,	 acc: 0.2138, 	 acc_top5: 0.6707
+
+
+[valid] loss: 837.6467,	 acc: 0.2736,	 acc_top5: 0.6967 
+
+
+Epoch 29/100:
+
+
+[Finetune] loss: 784.1966,	 acc: 0.2313, 	 acc_top5: 0.7082
+
+
+[valid] loss: 750.2202,	 acc: 0.2684,	 acc_top5: 0.6975 
+
+
+Epoch 30/100:
+
+
+[Finetune] loss: 858.8012,	 acc: 0.2272, 	 acc_top5: 0.6954
+
+
+[valid] loss: 716.6417,	 acc: 0.3087,	 acc_top5: 0.7536 
+
+
+Epoch 31/100:
+
+
+[Finetune] loss: 789.4038,	 acc: 0.2262, 	 acc_top5: 0.6910
+
+
+[valid] loss: 955.3145,	 acc: 0.2786,	 acc_top5: 0.6258 
+
+
+Epoch 32/100:
+
+
+[Finetune] loss: 1136.0054,	 acc: 0.2009, 	 acc_top5: 0.6465
+
+
+[valid] loss: 900.4112,	 acc: 0.2298,	 acc_top5: 0.7350 
+
+
+Epoch 33/100:
+
+
+[Finetune] loss: 923.2835,	 acc: 0.2178, 	 acc_top5: 0.6775
+
+
+[valid] loss: 1086.6471,	 acc: 0.2726,	 acc_top5: 0.6637 
+
+
+Epoch 34/100:
+
+
+[Finetune] loss: 834.6955,	 acc: 0.2241, 	 acc_top5: 0.6905
+
+
+[valid] loss: 795.2983,	 acc: 0.3488,	 acc_top5: 0.6763 
+
+
+Epoch 35/100:
+
+
+[Finetune] loss: 859.5474,	 acc: 0.2198, 	 acc_top5: 0.6794
+
+
+[valid] loss: 1193.5280,	 acc: 0.2093,	 acc_top5: 0.6550 
+
+
+Epoch 36/100:
+
+
+[Finetune] loss: 774.5445,	 acc: 0.2227, 	 acc_top5: 0.6903
+
+
+[valid] loss: 471.7590,	 acc: 0.3301,	 acc_top5: 0.8103 
+
+
+Epoch 37/100:
+
+
+[Finetune] loss: 855.2376,	 acc: 0.2149, 	 acc_top5: 0.6673
+
+
+[valid] loss: 1137.6271,	 acc: 0.2698,	 acc_top5: 0.6645 
+
+
+Epoch 38/100:
+
+
+[Finetune] loss: 747.3892,	 acc: 0.2307, 	 acc_top5: 0.6918
+
+
+[valid] loss: 1202.3250,	 acc: 0.2608,	 acc_top5: 0.6775 
+
+
+Epoch 39/100:
+
+
+[Finetune] loss: 782.5532,	 acc: 0.2223, 	 acc_top5: 0.6861
+
+
+[valid] loss: 757.6244,	 acc: 0.2730,	 acc_top5: 0.6901 
+
+
+Epoch 40/100:
+
+
+[Finetune] loss: 658.6249,	 acc: 0.2343, 	 acc_top5: 0.7047
+
+
+[valid] loss: 434.4381,	 acc: 0.3333,	 acc_top5: 0.8021 
+
+
+Epoch 41/100:
+
+
+[Finetune] loss: 705.3462,	 acc: 0.2290, 	 acc_top5: 0.6927
+
+
+[valid] loss: 394.0695,	 acc: 0.3736,	 acc_top5: 0.7971 
+
+
+Epoch 42/100:
+
+
+[Finetune] loss: 661.6149,	 acc: 0.2334, 	 acc_top5: 0.7036
+
+
+[valid] loss: 660.4946,	 acc: 0.3021,	 acc_top5: 0.6865 
+
+
+Epoch 43/100:
+
+
+[Finetune] loss: 680.4914,	 acc: 0.2311, 	 acc_top5: 0.6970
+
+
+[valid] loss: 622.1487,	 acc: 0.3033,	 acc_top5: 0.6927 
+
+
+Epoch 44/100:
+
+
+[Finetune] loss: 642.1106,	 acc: 0.2317, 	 acc_top5: 0.6969
+
+
+[valid] loss: 712.9304,	 acc: 0.2530,	 acc_top5: 0.7887 
+
+
+Epoch 45/100:
+
+
+[Finetune] loss: 631.9273,	 acc: 0.2346, 	 acc_top5: 0.7064
+
+
+[valid] loss: 267.4201,	 acc: 0.3554,	 acc_top5: 0.8500 
+
+
+Epoch 46/100:
+
+
+[Finetune] loss: 532.4151,	 acc: 0.2433, 	 acc_top5: 0.7128
+
+
+[valid] loss: 347.7989,	 acc: 0.3147,	 acc_top5: 0.7760 
+
+
+Epoch 47/100:
+
+
+[Finetune] loss: 496.8614,	 acc: 0.2484, 	 acc_top5: 0.7218
+
+
+[valid] loss: 272.0380,	 acc: 0.3482,	 acc_top5: 0.8560 
+
+
+Epoch 48/100:
+
+
+[Finetune] loss: 503.2830,	 acc: 0.2403, 	 acc_top5: 0.7131
+
+
+[valid] loss: 732.2797,	 acc: 0.2658,	 acc_top5: 0.6889 
+
+
+Epoch 49/100:
+
+
+[Finetune] loss: 422.8039,	 acc: 0.2526, 	 acc_top5: 0.7353
+
+
+[valid] loss: 298.1961,	 acc: 0.3870,	 acc_top5: 0.7873 
+
+
+Epoch 50/100:
+
+
+[Finetune] loss: 477.1729,	 acc: 0.2407, 	 acc_top5: 0.7105
+
+
+[valid] loss: 662.4669,	 acc: 0.2594,	 acc_top5: 0.7624 
+
+
+Epoch 51/100:
+
+
+[Finetune] loss: 437.3374,	 acc: 0.2478, 	 acc_top5: 0.7254
+
+
+[valid] loss: 749.5982,	 acc: 0.2153,	 acc_top5: 0.6565 
+
+
+Epoch 52/100:
+
+
+[Finetune] loss: 427.9807,	 acc: 0.2531, 	 acc_top5: 0.7290
+
+
+[valid] loss: 414.1891,	 acc: 0.3019,	 acc_top5: 0.7464 
+
+
+Epoch 53/100:
+
+
+[Finetune] loss: 481.9085,	 acc: 0.2347, 	 acc_top5: 0.7057
+
+
+[valid] loss: 380.4029,	 acc: 0.3031,	 acc_top5: 0.8077 
+
+
+Epoch 54/100:
+
+
+[Finetune] loss: 422.2454,	 acc: 0.2421, 	 acc_top5: 0.7198
+
+
+[valid] loss: 466.3072,	 acc: 0.2220,	 acc_top5: 0.8125 
+
+
+Epoch 55/100:
+
+
+[Finetune] loss: 421.9289,	 acc: 0.2414, 	 acc_top5: 0.7179
+
+
+[valid] loss: 453.1831,	 acc: 0.3223,	 acc_top5: 0.6917 
+
+
+Epoch 56/100:
+
+
+[Finetune] loss: 331.0121,	 acc: 0.2597, 	 acc_top5: 0.7435
+
+
+[valid] loss: 219.5664,	 acc: 0.3179,	 acc_top5: 0.8898 
+
+
+Epoch 57/100:
+
+
+[Finetune] loss: 317.1965,	 acc: 0.2601, 	 acc_top5: 0.7426
+
+
+[valid] loss: 191.7564,	 acc: 0.3614,	 acc_top5: 0.8634 
+
+
+Epoch 58/100:
+
+
+[Finetune] loss: 283.2196,	 acc: 0.2648, 	 acc_top5: 0.7500
+
+
+[valid] loss: 187.2312,	 acc: 0.3562,	 acc_top5: 0.8766 
+
+
+Epoch 59/100:
+
+
+[Finetune] loss: 267.6108,	 acc: 0.2623, 	 acc_top5: 0.7575
+
+
+[valid] loss: 197.8559,	 acc: 0.3752,	 acc_top5: 0.8281 
+
+
+Epoch 60/100:
+
+
+[Finetune] loss: 285.1440,	 acc: 0.2630, 	 acc_top5: 0.7425
+
+
+[valid] loss: 160.6112,	 acc: 0.3638,	 acc_top5: 0.8826 
+
+
+Epoch 61/100:
+
+
+[Finetune] loss: 283.7578,	 acc: 0.2593, 	 acc_top5: 0.7407
+
+
+[valid] loss: 210.3168,	 acc: 0.3876,	 acc_top5: 0.8195 
+
+
+Epoch 62/100:
+
+
+[Finetune] loss: 183.6253,	 acc: 0.2917, 	 acc_top5: 0.7872
+
+
+[valid] loss: 151.9882,	 acc: 0.3706,	 acc_top5: 0.8644 
+
+
+Epoch 63/100:
+
+
+[Finetune] loss: 206.7311,	 acc: 0.2740, 	 acc_top5: 0.7651
+
+
+[valid] loss: 246.5804,	 acc: 0.3245,	 acc_top5: 0.7788 
+
+
+Epoch 64/100:
+
+
+[Finetune] loss: 217.3860,	 acc: 0.2690, 	 acc_top5: 0.7581
+
+
+[valid] loss: 196.4996,	 acc: 0.3726,	 acc_top5: 0.8039 
+
+
+Epoch 65/100:
+
+
+[Finetune] loss: 193.2725,	 acc: 0.2782, 	 acc_top5: 0.7705
+
+
+[valid] loss: 186.8481,	 acc: 0.3391,	 acc_top5: 0.8377 
+
+
+Epoch 66/100:
+
+
+[Finetune] loss: 189.7627,	 acc: 0.2723, 	 acc_top5: 0.7685
+
+
+[valid] loss: 163.7463,	 acc: 0.3576,	 acc_top5: 0.8269 
+
+
+Epoch 67/100:
+
+
+[Finetune] loss: 178.0873,	 acc: 0.2786, 	 acc_top5: 0.7721
+
+
+[valid] loss: 273.1303,	 acc: 0.2632,	 acc_top5: 0.8107 
+
+
+Epoch 68/100:
+
+
+[Finetune] loss: 165.8973,	 acc: 0.2863, 	 acc_top5: 0.7801
+
+
+[valid] loss: 101.6219,	 acc: 0.4159,	 acc_top5: 0.8814 
+
+
+Epoch 69/100:
+
+
+[Finetune] loss: 141.0950,	 acc: 0.2925, 	 acc_top5: 0.7939
+
+
+[valid] loss: 121.0052,	 acc: 0.3824,	 acc_top5: 0.8586 
+
+
+Epoch 70/100:
+
+
+[Finetune] loss: 136.4422,	 acc: 0.2946, 	 acc_top5: 0.7947
+
+
+[valid] loss: 155.7702,	 acc: 0.3552,	 acc_top5: 0.8359 
+
+
+Epoch 71/100:
+
+
+[Finetune] loss: 130.5935,	 acc: 0.2950, 	 acc_top5: 0.7974
+
+
+[valid] loss: 117.2637,	 acc: 0.3974,	 acc_top5: 0.8349 
+
+
+Epoch 72/100:
+
+
+[Finetune] loss: 122.7044,	 acc: 0.2962, 	 acc_top5: 0.7980
+
+
+[valid] loss: 122.0512,	 acc: 0.3698,	 acc_top5: 0.8399 
+
+
+Epoch 73/100:
+
+
+[Finetune] loss: 117.2102,	 acc: 0.2981, 	 acc_top5: 0.7993
+
+
+[valid] loss: 98.8790,	 acc: 0.3882,	 acc_top5: 0.8680 
+
+
+Epoch 74/100:
+
+
+[Finetune] loss: 112.5981,	 acc: 0.3009, 	 acc_top5: 0.8022
+
+
+[valid] loss: 101.8959,	 acc: 0.3824,	 acc_top5: 0.8526 
+
+
+Epoch 75/100:
+
+
+[Finetune] loss: 103.4485,	 acc: 0.3017, 	 acc_top5: 0.8080
+
+
+[valid] loss: 96.6345,	 acc: 0.3906,	 acc_top5: 0.8642 
+
+
+Epoch 76/100:
+
+
+[Finetune] loss: 100.8906,	 acc: 0.3062, 	 acc_top5: 0.8073
+
+
+[valid] loss: 85.7286,	 acc: 0.3976,	 acc_top5: 0.8796 
+
+
+Epoch 77/100:
+
+
+[Finetune] loss: 99.0648,	 acc: 0.3008, 	 acc_top5: 0.8103
+
+
+[valid] loss: 97.8993,	 acc: 0.3700,	 acc_top5: 0.8650 
+
+
+Epoch 78/100:
+
+
+[Finetune] loss: 93.6838,	 acc: 0.3078, 	 acc_top5: 0.8112
+
+
+[valid] loss: 87.0895,	 acc: 0.3868,	 acc_top5: 0.8768 
+
+
+Epoch 79/100:
+
+
+[Finetune] loss: 91.3891,	 acc: 0.3065, 	 acc_top5: 0.8143
+
+
+[valid] loss: 81.8312,	 acc: 0.3928,	 acc_top5: 0.8758 
+
+
+Epoch 80/100:
+
+
+[Finetune] loss: 87.5400,	 acc: 0.3127, 	 acc_top5: 0.8163
+
+
+[valid] loss: 100.6453,	 acc: 0.3564,	 acc_top5: 0.8600 
+
+
+Epoch 81/100:
+
+
+[Finetune] loss: 84.6307,	 acc: 0.3186, 	 acc_top5: 0.8182
+
+
+[valid] loss: 87.4831,	 acc: 0.3860,	 acc_top5: 0.8550 
+
+
+Epoch 82/100:
+
+
+[Finetune] loss: 82.1383,	 acc: 0.3138, 	 acc_top5: 0.8163
+
+
+[valid] loss: 72.1423,	 acc: 0.4008,	 acc_top5: 0.8820 
+
+
+Epoch 83/100:
+
+
+[Finetune] loss: 79.2861,	 acc: 0.3200, 	 acc_top5: 0.8200
+
+
+[valid] loss: 87.4153,	 acc: 0.3798,	 acc_top5: 0.8662 
+
+
+Epoch 84/100:
+
+
+[Finetune] loss: 79.2622,	 acc: 0.3160, 	 acc_top5: 0.8212
+
+
+[valid] loss: 74.3053,	 acc: 0.3998,	 acc_top5: 0.8820 
+
+
+Epoch 85/100:
+
+
+[Finetune] loss: 77.1000,	 acc: 0.3163, 	 acc_top5: 0.8205
+
+
+[valid] loss: 70.5132,	 acc: 0.4036,	 acc_top5: 0.8836 
+
+
+Epoch 86/100:
+
+
+[Finetune] loss: 74.9387,	 acc: 0.3172, 	 acc_top5: 0.8199
+
+
+[valid] loss: 72.0555,	 acc: 0.4006,	 acc_top5: 0.8806 
+
+
+Epoch 87/100:
+
+
+[Finetune] loss: 73.8367,	 acc: 0.3206, 	 acc_top5: 0.8230
+
+
+[valid] loss: 81.2472,	 acc: 0.3958,	 acc_top5: 0.8574 
+
+
+Epoch 88/100:
+
+
+[Finetune] loss: 71.0127,	 acc: 0.3263, 	 acc_top5: 0.8288
+
+
+[valid] loss: 69.3712,	 acc: 0.4018,	 acc_top5: 0.8814 
+
+
+Epoch 89/100:
+
+
+[Finetune] loss: 70.0739,	 acc: 0.3261, 	 acc_top5: 0.8263
+
+
+[valid] loss: 68.4817,	 acc: 0.4016,	 acc_top5: 0.8846 
+
+
+Epoch 90/100:
+
+
+[Finetune] loss: 69.8763,	 acc: 0.3221, 	 acc_top5: 0.8246
+
+
+[valid] loss: 68.7728,	 acc: 0.3964,	 acc_top5: 0.8808 
+
+
+Epoch 91/100:
+
+
+[Finetune] loss: 68.6589,	 acc: 0.3284, 	 acc_top5: 0.8260
+
+
+[valid] loss: 69.5658,	 acc: 0.4044,	 acc_top5: 0.8786 
+
+
+Epoch 92/100:
+
+
+[Finetune] loss: 68.3822,	 acc: 0.3257, 	 acc_top5: 0.8269
+
+
+[valid] loss: 67.0822,	 acc: 0.4034,	 acc_top5: 0.8788 
+
+
+Epoch 93/100:
+
+
+[Finetune] loss: 67.3294,	 acc: 0.3278, 	 acc_top5: 0.8299
+
+
+[valid] loss: 68.2862,	 acc: 0.4012,	 acc_top5: 0.8808 
+
+
+Epoch 94/100:
+
+
+[Finetune] loss: 66.1492,	 acc: 0.3300, 	 acc_top5: 0.8271
+
+
+[valid] loss: 69.5886,	 acc: 0.3998,	 acc_top5: 0.8784 
+
+
+Epoch 95/100:
+
+
+[Finetune] loss: 65.8997,	 acc: 0.3323, 	 acc_top5: 0.8277
+
+
+[valid] loss: 68.8290,	 acc: 0.4048,	 acc_top5: 0.8790 
+
+
+Epoch 96/100:
+
+
+[Finetune] loss: 64.6454,	 acc: 0.3319, 	 acc_top5: 0.8311
+
+
+[valid] loss: 65.5795,	 acc: 0.4058,	 acc_top5: 0.8836 
+
+
+Epoch 97/100:
+
+
+[Finetune] loss: 65.5260,	 acc: 0.3274, 	 acc_top5: 0.8282
+
+
+[valid] loss: 66.6182,	 acc: 0.4062,	 acc_top5: 0.8818 
+
+
+Epoch 98/100:
+
+
+[Finetune] loss: 66.0229,	 acc: 0.3295, 	 acc_top5: 0.8301
+
+
+[valid] loss: 65.8651,	 acc: 0.4056,	 acc_top5: 0.8832 
+
+
+Epoch 99/100:
+
+
+[Finetune] loss: 65.5230,	 acc: 0.3318, 	 acc_top5: 0.8275
+
+
+[valid] loss: 65.4422,	 acc: 0.4069,	 acc_top5: 0.8836 
+
+
+Epoch 100/100:
+
+
+[Finetune] loss: 65.0633,	 acc: 0.3306, 	 acc_top5: 0.8286
+
+
+[valid] loss: 66.1184,	 acc: 0.4060,	 acc_top5: 0.8844 
+
+
+[test] loss: 67.3899,	 acc: 0.4099,	 acc_top5: 0.8740 
+
